@@ -34,6 +34,17 @@ function merge(arr1, arr2) {
 	return merged;
 }
 
+/**
+ * Sorts an array in ascending order using the merge sort algorithm.
+ *
+ * @param {Array} arr - The array to be sorted.
+ * @returns {Array} The sorted array in ascending order.
+ *
+ * @example
+ *
+ * // returns [1, 2, 3, 4, 5, 6]
+ * mergeSort([6, 1, 5, 2, 4, 3]);
+ */
 function mergeSort(arr) {
 	if (arr.length <= 1) return arr;
 	const mid = Math.floor(arr.length / 2);
